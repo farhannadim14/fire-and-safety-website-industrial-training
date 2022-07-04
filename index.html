@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire & Safety</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- home page -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="IMAGES/main logo.gif"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="manuals.html">UTILITIES/MANUALS</a></li>
+                    <li><a href="photos.html">DISPLAY</a></li>
+                    <li><a href="OrgChartEditor.html">ORGANOGRAM</a></li>
+                    <li><a href="http://localhost/IOCL%20FIRE%20AND%20SAFETY/upload1.php">DOCS</a></li>
+                    
+                </ul>
+            </div>
+            <input type="search" value="" id="search" placeholder="Search" onchange="openPage()" required>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Fire And Safety Department</h1>
+            <p>
+                Take fire seriously, move quickly <br>
+
+                Know your escape plan <br>
+
+                Focus on Fire Prevention <br>
+
+                Fire can kill, don't be a statistic! <br>
+            </p>
+            <a href="readmore.html" class="hero-btn">Read More</a>
+        </div>
+    </section>
+    <!-- Training we provide here -->
+    <section class="training">
+        <div class="course">
+            <h2>Training Programs</h2>
+            <p>
+                Get Ready To Find Out!
+            </p>
+            <a href="training.html" class="zero-btn">Know More</a>
+        </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonials">
+        <h1>What Our Employees Say</h1>
+        <p>We have given every facility, knowledge, energy, opportunity to move forward own our own.</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="IMAGES/firefighter Dominique Maltais.webp">
+                <div>
+                    <p>"My experience at Fire and Safety Deparment of IOCL BGR is great and memorable. The employees
+                        around here
+                        helped me to enhance my confidence and interpersonal skills to a great extent.</p> I am thankful
+                    to L&D Department
+                    for providing a platform/situation to enhance my skills and an opportunity to showcase them. In the
+                    last I am saying that The World is here at IOCL BGR ."</p>
+                    <h3>Dominique Maltais</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="IMAGES/firefighter Steve Buscemi.jpg">
+                <div>
+                    <p>It was my immense luck and fortune to be the part of Fire and Safety Department at IOCL BGR where
+                        I can grow. The
+                        entire department leaves no stone unturned to shape every employee. My 31 years at
+                        IOCL BGR have been a wonderful experience of learning with prolific exposure to outside. Huge
+                        respect, love and devotion for entire Fire department. It's their efforts that
+                        make me to count myself into better professional.</p>
+                    <h3>Steve Buscemi</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="OrgChartEditor.html">our team</a></li>
+                        <li><a href="training.html">our services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="readmore.html">guidelines</a></li>
+                        <li><a href="manuals.html">manuals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/login.php/"><i class="fa fa-facebook"></i>
+                            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <p>Copyright &copy; 2022 All rights reserved by IOCL BGR</p>
+        </div>
+    </footer>
+
+    <script>
+        function openPage() {
+            var x = document.getElementById("search").value;
+            if (x === "fire") {
+                window.open("/readmore.html");
+            }
+            if (x === "guidelines") {
+                window.open("/readmore.html");
+            }
+            if (x === "manuals") {
+                window.open("/manuals.html");
+            }
+            if (x === "fire equipment") {
+                window.open("/manuals.html");
+            }
+            if (x === "protection equipment") {
+                window.open("/manuals.html");
+            }
+            if (x === "CPR") {
+                window.open("/training.html");
+            }
+            if (x === "basic fire") {
+                window.open("/training.html");
+            }
+            if (x === "mock drills") {
+                window.open("/training.html");
+            }
+            if (x === "advanced fire") {
+                window.open("/training.html");
+            }
+            if (x === "first aid") {
+                window.open("/training.html");
+            }
+            if (x === "about") {
+                window.open("/about.html");
+            }
+            if (x === "display") {
+                window.open("/photos.html");
+            }
+            if (x === "upload") {
+                window.open("http://localhost/IOCL%20FIRE%20AND%20SAFETY/upload1.php");
+            }
+            if (x === "download") {
+                window.open("http://localhost/IOCL%20FIRE%20AND%20SAFETY/download.php?id=1");
+            }
+
+        }
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

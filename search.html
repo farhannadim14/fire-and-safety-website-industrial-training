@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Search</title>
+</head>
+
+
+<body style=" background-color: rgb(4, 41, 255);">
+    <input type="search" value="" id="search" onchange="openPage()">
+
+    <script>
+        function openPage() {
+            var x = document.getElementById("search").value;
+            if (x === "fire") {
+                window.open("/readmore.html");
+            }
+            if (x === "guidelines") {
+                window.open("/readmore.html");
+            }
+            if (x === "manuals") {
+                window.open("/manuals.html");
+            }
+            if (x === "fire equipment") {
+                window.open("/manuals.html");
+            }
+            if (x === "protection equipment") {
+                window.open("/manuals.html");
+            }
+            if (x === "CPR") {
+                window.open("/training.html");
+            }
+            if (x === "training") {
+                window.open("/training.html");
+            }
+            if (x === "basic fire") {
+                window.open("/training.html");
+            }
+            if (x === "mock drills") {
+                window.open("/training.html");
+            }
+            if (x === "advanced fire") {
+                window.open("/training.html");
+            }
+            if (x === "first aid") {
+                window.open("/training.html");
+            }
+            if (x === "about") {
+                window.open("/about.html");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

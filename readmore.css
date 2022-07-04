@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 80%;
+    justify-content:space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.btn{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 15px;
+    font-size: 13px;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./IMAGES/guidelines.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-top;
+    justify-content: center;
+}
+.header-content {
+    margin-top: 55px;
+    color: whitesmoke;
+    text-align: left;
+}
+.header-content h2{
+    margin-right: 300px;
+    font: size 4vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: skyblue;
+    margin-right: 300px auto ;
+    border: radius 5px;
+}
+.header-content h1{
+    font: size 7vmin;
+    margin-top: 10px;
+    margin-bottom :30px;
+}
+.info{
+   font-size: 17px; 
+   margin-right: 100px;
+   
+   color: white;
+   position: absolute;
+   text-align: justify;
+
+}
+@media only screen and(max-width: 850px) {
+    .navbar{
+        padding:0;
+    }
+}
+footer{
+    background: #212226;
+    padding: 20px;
+}
+footer p{
+text-align: center;
+color:#fff;  
+}
